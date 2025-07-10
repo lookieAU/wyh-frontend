@@ -31,8 +31,8 @@ export default function RegisterForm() {
       const response = await authService.register(formData);
       setToken(response.token);
       setUser(response.user);
-      localStorage.setItem('token', response.token);
-      localStorage.setItem('user', JSON.stringify(response.user));
+      localStorage.setItem('allycare_token', response.token);
+      localStorage.setItem('allycare_user', JSON.stringify(response.user));
       router.push('/dashboard');
     } catch (err: any) {
       const errorMessage = err.response?.data?.message || 'Registration failed';
