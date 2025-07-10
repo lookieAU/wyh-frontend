@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:7050/allycare/api';
+const API_BASE_URL = 'https://wyh-backend.onrender.com/allycare/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
